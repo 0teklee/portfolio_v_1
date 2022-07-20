@@ -1,8 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { sizes} from "../styles/theme";
+import MobileMain from "../components/Templates/MobileMain";
+import PcMain from "../components/Templates/PcMain";
+import useWindowDimensions from "../utils/Hooks/useWindowDimensions";
 
 const Home: NextPage = () => {
+    console.log((sizes.laptop.slice(0,-2)))
+    const {width} = useWindowDimensions();
+    console.log(width)
   return (
     <div >
       <Head>
@@ -12,7 +19,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main >
-          <h1>123 text font Syne</h1>
+          <h1>123</h1>
+          {/*{ window.innerWidth < Number(sizes.laptop.slice(0,-2)) ? <MobileMain/> : <PcMain/>}*/}
       </main>
 
       <footer>
