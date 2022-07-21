@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 const Info = () => {
-  return <__Wrapper />;
+  return <div />;
 };
-
-const __Wrapper = styled.div``;
 
 export default Info;
