@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { theme } from "styles/theme";
 
-function IntroHeader() {
+const IntroHeader = () => {
   return (
     <__Container>
       <__FlexC>
@@ -15,7 +15,7 @@ function IntroHeader() {
       </__FlexSB>
     </__Container>
   );
-}
+};
 
 export default IntroHeader;
 
