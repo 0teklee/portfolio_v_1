@@ -21,7 +21,7 @@ const Item = ({ img, description = "", component }: IProps) => {
         />
       )}
       {description && <__Description>{description}</__Description>}
-      {component ? component : null}
+      {component}
     </__Wrapper>
   );
 };

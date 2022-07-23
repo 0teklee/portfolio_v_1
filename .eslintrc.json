@@ -60,6 +60,8 @@
     "no-undef": "off",
     "no-underscore-dangle": 0,
     "react/jsx-pascal-case": 0,
-    "no-unused-vars": 0
+    "no-unused-vars": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/no-unescaped-entities": 0
   }
 }

@@ -8,7 +8,7 @@ const MenuItem = [
   { id: "Info", path: "/info" },
 ];
 
-export const MenuModal = () => {
+const MenuModal = () => {
   return (
     <__Wrapper>
       {MenuItem.map((item) => (
@@ -17,6 +17,8 @@ export const MenuModal = () => {
     </__Wrapper>
   );
 };
+
+export default MenuModal;
 
 const __Wrapper = styled.div``;
 

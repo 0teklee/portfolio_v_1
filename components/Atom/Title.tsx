@@ -1,15 +1,15 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
 
-function Title({
+const Title = ({
   children,
   marginBottom,
 }: {
   children: ReactNode;
   marginBottom?: string;
-}) {
+}) => {
   return <__Title marginBottom={marginBottom}>{children}</__Title>;
-}
+};
 
 export default Title;
 

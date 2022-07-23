@@ -3,7 +3,7 @@ import Slide from "components/Atom/Slide/Slide";
 import Title from "components/Atom/Title";
 import styled from "styled-components";
 
-export const Work = () => {
+const Work = () => {
   return (
     <__Wrapper>
       <Title>Work</Title>
@@ -14,6 +14,8 @@ export const Work = () => {
     </__Wrapper>
   );
 };
+
+export default Work;
 
 const __Wrapper = styled.div`
   padding: 3rem;

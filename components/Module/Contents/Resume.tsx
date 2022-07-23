@@ -32,7 +32,6 @@ const Resume = () => {
       <__Wrapper>
         <__SpanBold>Netflix Original</__SpanBold>
         <__Ul>
-          <__Li></__Li>
           {ActingItem.map((item) => (
             <__Li>
               <__SpanBold>{item}</__SpanBold>
