@@ -7,7 +7,6 @@
   "parser": "@babel/eslint-parser",
   "extends": [
     "eslint:recommended",
-    "next",
     "plugin:react/recommended",
     "airbnb",
     "plugin:prettier/recommended",
@@ -62,6 +61,7 @@
     "react/jsx-pascal-case": 0,
     "no-unused-vars": 0,
     "react/jsx-props-no-spreading": 0,
-    "react/no-unescaped-entities": 0
+    "react/no-unescaped-entities": 0,
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
   }
 }
