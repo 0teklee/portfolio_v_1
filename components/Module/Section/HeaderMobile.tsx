@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import styled from "styled-components";
 import { theme } from "styles/theme";
-import { MenuModal } from "../Modal/MenuModal";
+import MenuModal from "../Modal/MenuModal";
 
 const MobileHeader = () => {
   const [modal, setModal] = useState(false);
@@ -52,7 +52,7 @@ const __ModalWrapper = styled.div`
   position: absolute;
   top: 3.6rem;
   right: 0;
-  z-index: 99;
+  z-index: 999;
 `;
 
 const __Title = styled.h1`
