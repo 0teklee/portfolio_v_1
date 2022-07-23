@@ -9,7 +9,7 @@ const PortfolioItem = [
 
 const Portfolio = () => {
   return (
-    <Slide>
+    <Slide interval={5000}>
       {PortfolioItem.map((item) => {
         return (
           <Item img={item.img} description={item?.description} key={item.id} />
