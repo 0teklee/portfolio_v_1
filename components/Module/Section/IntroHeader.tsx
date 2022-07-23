@@ -5,7 +5,7 @@ const IntroHeader = () => {
   return (
     <__Container>
       <__FlexC>
-        <__Title>Hello This is Me</__Title>
+        <__Title>Hello This Is Intro</__Title>
         <__Text>Model / Actress</__Text>
         <__Btn>CONTACT</__Btn>
       </__FlexC>

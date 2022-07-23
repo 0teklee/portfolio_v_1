@@ -1,12 +1,22 @@
 import Title from "components/Atom/Title";
-import Link from "next/link";
 import styled from "styled-components";
+import * as instaData from "public/asset/InstaPost.json";
+import Slide from "components/Atom/Slide/Slide";
+import Item from "components/Atom/Slide/Item";
 
 const InstaPost = () => {
+  const igLink = "https://www.instagram.com/lesyeoux";
   return (
     <__Wrapper>
       <Title marginBottom="0.5rem">Instagram</Title>
-      <__A href="https://www.instagram.com/lesyeoux">@lesyeoux</__A>
+      <__A href={igLink}>@lesyeoux</__A>
+      <__SlideWrapper>
+        <Slide>
+          {instaData.map((post) => (
+            <Item key={post.id} img={post.url} url={igLink} />
+          ))}
+        </Slide>
+      </__SlideWrapper>
     </__Wrapper>
   );
 };
@@ -21,8 +31,15 @@ const __Wrapper = styled.div`
 `;
 
 const __A = styled.a`
+  margin-bottom: 12rem;
   color: #fff;
   font-family: "Cormorant";
   font-size: 1rem;
+  cursor: pointer;
+`;
+
+const __SlideWrapper = styled.div`
+  width: 100%;
+  margin: 1.5rem;
   cursor: pointer;
 `;
