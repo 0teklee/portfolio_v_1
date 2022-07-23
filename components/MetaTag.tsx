@@ -9,7 +9,12 @@ interface IProps {
   img?: string;
 }
 
-const MetaTag = ({ title, description = desc, url, img }: IProps) => {
+const MetaTag = ({
+  title,
+  description = desc,
+  url,
+  img = "/asset/portfolio_4.png",
+}: IProps) => {
   return (
     <Head>
       <title>{title}</title>
