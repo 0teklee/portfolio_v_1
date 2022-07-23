@@ -25,7 +25,7 @@ export default InstaPost;
 
 const __Wrapper = styled.div`
   background: #000;
-  padding: 3rem;
+  padding: 2rem;
   width: 100%;
   height: 100%;
 `;
