@@ -11,7 +11,11 @@ const Home: NextPage = () => {
   const sizeCheck: boolean = useWindowDimensions()?.width < laptopSize;
   return (
     <>
-      <MetaTag title="portfolio" description="main page" />
+      <MetaTag
+        title="portfolio"
+        description="main page"
+        img="/asset/portfolio_4.png"
+      />
       {sizeCheck ? <MobileMainTemplate /> : <PcMainTemplate />}
     </>
   );

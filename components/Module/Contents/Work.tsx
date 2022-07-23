@@ -19,7 +19,7 @@ const Work = () => {
 export default Work;
 
 const __Wrapper = styled.div`
-  padding: 3rem;
+  padding: 2rem;
   background: #000;
 `;
 
