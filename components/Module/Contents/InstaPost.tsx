@@ -1,6 +1,6 @@
 import Title from "components/Atom/Title";
 import styled from "styled-components";
-import * as instaData from "public/asset/InstaPost.json";
+import instaData from "public/asset/InstaPost";
 import Slide from "components/Atom/Slide/Slide";
 import Item from "components/Atom/Slide/Item";
 
