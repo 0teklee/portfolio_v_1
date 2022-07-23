@@ -10,8 +10,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "airbnb",
-    "plugin:prettier/recommended",
-    "plugin:@next/next/recommended"
+    "plugin:prettier/recommended"
   ],
   "settings": {
     "react": {
