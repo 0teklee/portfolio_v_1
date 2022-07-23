@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "styles/theme";
+import Title from "components/Atom/Title";
 
 const CommercialItem = [
   "Samsung",
@@ -16,7 +17,7 @@ const ActingItem = ["Suriname", "Somebody"];
 const Resume = () => {
   return (
     <__Container>
-      <__Title>Experience</__Title>
+      <Title>Experience</Title>
       <__TitleSub>Commercial</__TitleSub>
       <__Wrapper>
         <__Ul>
@@ -29,10 +30,12 @@ const Resume = () => {
       </__Wrapper>
       <__TitleSub>Acting</__TitleSub>
       <__Wrapper>
+        <__SpanBold>Netflix Original</__SpanBold>
         <__Ul>
+          <__Li></__Li>
           {ActingItem.map((item) => (
             <__Li>
-              <__SpanBold>Netflix Drama {item}</__SpanBold>
+              <__SpanBold>{item}</__SpanBold>
               <__Span>extra</__Span>
             </__Li>
           ))}
@@ -48,18 +51,12 @@ const __Container = styled.div`
   padding: 3rem;
   width: 100%;
   height: 100%;
+  background: #000;
 `;
 
 const __Wrapper = styled.div`
   margin: 2rem;
   padding-left: 1rem;
-`;
-
-const __Title = styled.h1`
-  margin-bottom: 3rem;
-  font-family: "Syne", "sans-serif";
-  font-size: 1.3rem;
-  font-weight: 900;
 `;
 
 const __TitleSub = styled.h2`
@@ -68,6 +65,7 @@ const __TitleSub = styled.h2`
   font-family: "Syne", "sans-serif";
   font-size: 1.1rem;
   font-weight: 800;
+  color: #fff;
 `;
 
 const __Ul = styled.ul``;
@@ -78,13 +76,16 @@ const __Li = styled.li`
 
 const __SpanBold = styled.span`
   margin-right: 1rem;
+  padding-bottom: 1rem;
   font-family: "Syne", "sans-serif";
   font-size: 1rem;
   font-weight: 600;
+  color: #fff;
 `;
 
 const __Span = styled.span`
   font-family: "Syne", "sans-serif";
   font-size: 1rem;
   font-weight: 300;
+  color: #fff;
 `;

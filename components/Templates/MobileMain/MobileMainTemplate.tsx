@@ -1,12 +1,12 @@
 import Footer from "components/Module/Section/Footer";
 import Layout from "../../Layout/Layout";
 import MobileMainFullTemplate from "./MobileMainFullTemplate";
-import MobileHeader from "../../Module/Section/MobileHeader";
+import HeaderMobile from "../../Module/Section/HeaderMobile";
 
 const MobileMainTemplate = () => {
   return (
     <>
-      <MobileHeader />
+      <HeaderMobile />
       <Layout main={<MobileMainFullTemplate />} />
       <Footer />
     </>

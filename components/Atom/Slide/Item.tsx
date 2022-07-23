@@ -18,7 +18,6 @@ const Item = ({ img, description = "", component }: IProps) => {
           width="100%"
           height="100%"
           layout="responsive"
-          objectFit="contain"
         />
       )}
       {description && <__Description>{description}</__Description>}
@@ -30,7 +29,6 @@ const Item = ({ img, description = "", component }: IProps) => {
 export default Item;
 
 const __Wrapper = styled.div`
-  border: 1px solid black;
   width: 100%;
   height: 100%;
 `;

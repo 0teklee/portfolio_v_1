@@ -9,7 +9,7 @@ const MesurementItem = [
   { key: "H", value: "???" },
 ];
 
-function MeasurementNote() {
+const MeasurementNote = () => {
   return (
     <__Container>
       <__Title>Measurement</__Title>
@@ -21,7 +21,7 @@ function MeasurementNote() {
       ))}
     </__Container>
   );
-}
+};
 
 export default MeasurementNote;
 
@@ -53,4 +53,5 @@ const __Value = styled.span`
   font-family: "Playfair Display", "sans-serif";
   font-size: 1rem;
   font-weight: 500;
+  margin-bottom: 1.3rem;
 `;

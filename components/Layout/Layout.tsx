@@ -23,7 +23,6 @@ const __Layout = styled.div`
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 0;
 `;
 
 const __Left = styled.div`
