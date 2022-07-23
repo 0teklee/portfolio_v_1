@@ -10,10 +10,11 @@ interface IProps {
 }
 
 const Item = ({ img, description = "", url, component }: IProps) => {
-  const handleUrl = (url: string | undefined) => {
-    if (!url) return;
-    window.open(url);
+  const handleUrl = (param: string | undefined) => {
+    if (!param) return;
+    window.open(param);
   };
+
   return (
     <__Wrapper onClick={() => handleUrl(url)}>
       {img && (
