@@ -4,7 +4,7 @@ import Resume from "components/Module/Contents/Resume";
 import Work from "components/Module/Contents/Work";
 import IntroHeader from "components/Module/Section/IntroHeader";
 import styled from "styled-components";
-import Portfolio from "../../Module/Contents/Portfolio";
+import Portfolio from "components/Module/Contents/Portfolio";
 
 const MobileMainFullTemplate = () => {
   return (

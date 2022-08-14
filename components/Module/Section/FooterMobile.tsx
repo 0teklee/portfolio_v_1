@@ -2,7 +2,7 @@ import Router from "next/router";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
-function FooterMobile() {
+const FooterMobile = () => {
   const router = Router;
   const [path, setPath] = useState("");
 
@@ -22,7 +22,7 @@ function FooterMobile() {
       </__Button>
     </__Wrapper>
   );
-}
+};
 
 export default FooterMobile;
 

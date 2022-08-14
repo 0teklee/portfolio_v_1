@@ -17,7 +17,7 @@ const MenuModal = () => {
       document.getElementById("header")!.offsetHeight;
 
     window.scrollTo({
-      top: top,
+      top,
       behavior: "smooth",
     });
   };

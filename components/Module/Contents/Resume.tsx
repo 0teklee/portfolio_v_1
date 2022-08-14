@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { theme } from "styles/theme";
 import Title from "components/Atom/Title";
-import { RefObject } from "react";
 
 const CommercialItem = [
   "Samsung",
@@ -24,8 +22,8 @@ const Resume = () => {
       <__Wrapper>
         <__Ul>
           {CommercialItem.map((item) => (
-            <__Li key={`${item}-${compKey++}`}>
-              <__SpanBold key={`${item}-${compKey++}`}>{item}</__SpanBold>
+            <__Li key={`${item}-${compKey + 1}`}>
+              <__SpanBold key={`${item}-${compKey + 1}`}>{item}</__SpanBold>
             </__Li>
           ))}
         </__Ul>
@@ -35,9 +33,9 @@ const Resume = () => {
         <__SpanBold>Netflix Original</__SpanBold>
         <__Ul>
           {ActingItem.map((item) => (
-            <__Li key={`${item}-${compKey++}`}>
-              <__SpanBold key={`${item}-${compKey++}`}>{item}</__SpanBold>
-              <__Span key={`${item}-${compKey++}`}>extra</__Span>
+            <__Li key={`${item}-${compKey + 1}`}>
+              <__SpanBold key={`${item}-${compKey + 1}`}>{item}</__SpanBold>
+              <__Span key={`${item}-${compKey + 1}`}>extra</__Span>
             </__Li>
           ))}
         </__Ul>
