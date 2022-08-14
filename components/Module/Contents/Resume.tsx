@@ -12,7 +12,6 @@ const CommercialItem = [
 ];
 
 const ActingItem = ["Suriname", "Somebody"];
-let compKey = 0;
 
 const Resume = () => {
   return (
@@ -22,8 +21,8 @@ const Resume = () => {
       <__Wrapper>
         <__Ul>
           {CommercialItem.map((item) => (
-            <__Li key={`${item}-${compKey + 1}`}>
-              <__SpanBold key={`${item}-${compKey + 1}`}>{item}</__SpanBold>
+            <__Li key={`commercial-${item}`}>
+              <__SpanBold key={`commercial-${item}-list`}>{item}</__SpanBold>
             </__Li>
           ))}
         </__Ul>
@@ -33,9 +32,9 @@ const Resume = () => {
         <__SpanBold>Netflix Original</__SpanBold>
         <__Ul>
           {ActingItem.map((item) => (
-            <__Li key={`${item}-${compKey + 1}`}>
-              <__SpanBold key={`${item}-${compKey + 1}`}>{item}</__SpanBold>
-              <__Span key={`${item}-${compKey + 1}`}>extra</__Span>
+            <__Li key={`acting-${item}`}>
+              <__SpanBold key={`acting-${item}-title`}>{item}</__SpanBold>
+              <__Span key={`acting-${item}-list-role`}>extra</__Span>
             </__Li>
           ))}
         </__Ul>
