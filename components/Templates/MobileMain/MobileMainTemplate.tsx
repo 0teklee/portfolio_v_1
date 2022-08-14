@@ -1,7 +1,7 @@
 import FooterMobile from "components/Module/Section/FooterMobile";
 import Layout from "components/Layout/Layout";
-import MobileMainFullTemplate from "./MobileMainFullTemplate";
 import HeaderMobile from "components/Module/Section/HeaderMobile";
+import MobileMainFullTemplate from "./MobileMainFullTemplate";
 
 const MobileMainTemplate = () => {
   return (
