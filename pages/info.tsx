@@ -1,3 +1,4 @@
+import MetaTag from "components/MetaTag";
 import FooterMobile from "components/Module/Section/FooterMobile";
 import HeaderMobile from "components/Module/Section/HeaderMobile";
 import InfoTemplate from "components/Templates/Info/InfoTemplate";
@@ -11,6 +12,7 @@ const Info = () => {
 
   return (
     <__Wrapper>
+      <MetaTag title="Chachi - Info" description="main page" />
       {sizeCheck ? <HeaderMobile /> : null}
       <InfoTemplate />
       {sizeCheck ? <FooterMobile /> : null}
