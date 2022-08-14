@@ -1,18 +1,47 @@
-import { useEffect } from "react";
+import Router from "next/router";
 import styled from "styled-components";
 
 const MenuItem = [
-  { id: "Contact", path: "/info" },
-  { id: "Work", path: "/info" },
-  { id: "Info", path: "/info" },
-  { id: "Info", path: "/info" },
+  { id: "Work" },
+  { id: "Portfolio" },
+  { id: "Experience" },
+  { id: "Info" },
 ];
 
 const MenuModal = () => {
+  const router = Router;
+
+  const handleScroll = (id: string) => {
+    const top =
+      document.getElementById(id)!.offsetTop -
+      document.getElementById("header")!.offsetHeight;
+
+    window.scrollTo({
+      top: top,
+      behavior: "smooth",
+    });
+  };
+
+  const handleInfoItem = (id: string) => {
+    if (id !== "Info") {
+      if (router.pathname !== "/") {
+        router.push("/").then(() => {
+          handleScroll(id);
+        });
+        return;
+      }
+      handleScroll(id);
+      return;
+    }
+    router.push("info");
+  };
+
   return (
     <__Wrapper>
       {MenuItem.map((item) => (
-        <__Menu>{item.id}</__Menu>
+        <__Menu key={item.id} onClick={() => handleInfoItem(item.id)}>
+          {item.id}
+        </__Menu>
       ))}
     </__Wrapper>
   );

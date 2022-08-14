@@ -16,7 +16,7 @@ const MobileHeader = () => {
   };
 
   return (
-    <__Container>
+    <__Container id="header">
       <__Wrapper>
         <__Title onClick={handleTitle}> Chachi</__Title>
         <__Button onClick={handleMenu}>

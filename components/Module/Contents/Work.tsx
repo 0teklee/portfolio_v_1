@@ -1,11 +1,12 @@
 import Item from "components/Atom/Slide/Item";
 import Slide from "components/Atom/Slide/Slide";
 import Title from "components/Atom/Title";
+import { RefObject } from "react";
 import styled from "styled-components";
 
 const Work = () => {
   return (
-    <__Wrapper>
+    <__Wrapper id="Work">
       <Title>Work</Title>
       <Slide>
         <Item description="123" />

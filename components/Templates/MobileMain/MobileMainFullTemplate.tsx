@@ -1,6 +1,5 @@
 import InstaPost from "components/Module/Contents/InstaPost";
 import Intro from "components/Module/Contents/Intro";
-import Measurement from "components/Module/Contents/Measurement";
 import Resume from "components/Module/Contents/Resume";
 import Work from "components/Module/Contents/Work";
 import IntroHeader from "components/Module/Section/IntroHeader";

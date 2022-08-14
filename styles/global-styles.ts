@@ -25,7 +25,6 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 }
 * {
   box-sizing: border-box;
-  font-family: 'Syne','Playfair Display' ,sans-serif;
   line-height: normal;
   letter-spacing: normal;
 }
