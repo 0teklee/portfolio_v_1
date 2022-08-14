@@ -1,5 +1,6 @@
 import Title from "components/Atom/Title";
 import styled from "styled-components";
+import { sizes } from "styles/theme";
 
 const InfoTemplate = () => {
   const contactItem = [
@@ -11,11 +12,15 @@ const InfoTemplate = () => {
     { field: "B", value: "99" },
     { field: "W", value: "30" },
     { field: "H", value: "99" },
+    { field: "Height", value: "170cm" },
+    { field: "Weight", value: "xxkg" },
   ];
 
   return (
     <__Wrapper>
-      <Title padding="140px 0 1rem 2rem">Contact</Title>
+      <Title padding="140px 0 1rem 2rem">Info</Title>
+      <__Divider />
+      <Title padding="0 0 1rem 2rem">Contact</Title>
       <__ContactWrapper>
         {contactItem.map((item) => (
           <__ContentWrapper key={item.field}>
@@ -46,8 +51,15 @@ const __Wrapper = styled.div`
   color: #fff;
 `;
 
+const __Divider = styled.div`
+  max-width: ${sizes.laptop};
+  margin: 1rem 3rem 2rem 3rem;
+  border: 1px solid #fff;
+  color: #fff;
+`;
+
 const __ContactWrapper = styled.div`
-  width: 500px;
+  max-width: ${sizes.laptop};
 `;
 
 const __MeasureWrapper = styled(__ContactWrapper)`

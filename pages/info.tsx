@@ -13,7 +13,7 @@ const Info = () => {
     <__Wrapper>
       {sizeCheck ? <HeaderMobile /> : null}
       <InfoTemplate />
-      <FooterMobile />
+      {sizeCheck ? <FooterMobile /> : null}
     </__Wrapper>
   );
 };
